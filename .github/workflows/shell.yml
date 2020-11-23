@@ -6,7 +6,7 @@ on: [push, workflow_dispatch]
 jobs:
   runshell:
     runs-on: macos-latest
-    name: A job run a Solaris shell
+    name: Start a Solaris shell
     steps:
     - name: Run solaris
       id: shell
