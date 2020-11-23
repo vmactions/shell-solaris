@@ -1,0 +1,25 @@
+
+name: shell
+
+on: [push, workflow_dispatch]
+
+jobs:
+  runshell:
+    runs-on: macos-latest
+    name: A job run a Solaris shell
+    steps:
+    - name: Run solaris
+      id: shell
+      uses: vmactions/solaris-vm@v0.0.1
+      with:
+        run: |
+          pwd
+          ls -lah
+          whoami
+          env
+          cat /etc/release
+          echo "OK"
+    - name: Sleep
+      run: sleep 5
+    - uses: neilpang/debugger-action@master
+
