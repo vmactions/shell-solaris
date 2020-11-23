@@ -8,7 +8,7 @@ jobs:
     runs-on: macos-latest
     name: Start a Solaris shell
     steps:
-    - name: Run solaris
+    - name: Starting a solaris VM, please wait. It may take 5 minutes
       id: shell
       uses: vmactions/solaris-vm@v0.0.1
       with:

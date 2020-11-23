@@ -57,5 +57,8 @@ Mac-1606142911434:shell-solaris runner$  ssh solaris
 ```
 
 
+# Under the hood
+
+Uses: https://github.com/vmactions/solaris-vm
 
 
