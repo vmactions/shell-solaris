@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Starting a solaris VM, please wait. It may take 5 minutes
       id: shell
-      uses: vmactions/solaris-vm@v0.0.1
+      uses: vmactions/solaris-vm@main
       with:
         run: |
           pwd
