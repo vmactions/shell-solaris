@@ -5,12 +5,12 @@ on: [push, workflow_dispatch]
 
 jobs:
   runshell:
-    runs-on: macos-12
+    runs-on: ubuntu-latest
     name: Start a Solaris shell
     steps:
     - name: Starting a solaris VM, please wait. It may take 5 minutes
       id: shell
-      uses: vmactions/solaris-vm@v0
+      uses: vmactions/solaris-vm@v1
       with:
         run: |
           pwd
